@@ -1,0 +1,22 @@
+{
+  "candidate": [
+    {
+      "id": 1,
+      "name": "Muhammad Bagwan",
+      "email": "muhammad@gmail.com",
+      "phone": "9011933413",
+      "designation": "Frontend Engineer",
+      "experience": "3",
+      "previous_organisation": "Google India"
+    },
+    {
+      "name": "Sarfraz Bagwan",
+      "email": "sarfraz@gmail.com",
+      "phone": "9876543210",
+      "designation": "Full Stack Engineer",
+      "experience": "1",
+      "previous_organisation": "A2Z IT HUB PVT.LTD",
+      "id": 3
+    }
+  ]
+}
