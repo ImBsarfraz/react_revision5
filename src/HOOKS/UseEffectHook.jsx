@@ -6,34 +6,42 @@ const UseEffectHook = () => {
     useEffect(() => {
         const fetchUser = async () => {
             const url = "https://jsonplaceholder.typicode.com/users";
-            const result = await fetch(url);
-            const usersData = await result.json();
-            setUser(usersData);
+            try {
+                const result = await fetch(url);
+                const userData = await result.json();
+                setUser(userData);
+            } catch (error) {
+                alert("Fetch Failed: ", error);
+            }
         }
-        fetchUser()
+
+        fetchUser();
     }, []);
+
+    // console.log(user);
 
     return (
         <>
             <div className="container-fluid">
                 <div className="row">
                     {
-                        user.map((me) => (
-                            <div className="col-md-3 mt-5">
+                        user.map((item) => (
+                            <div className="col-md-4 mt-4">
                                 <div className="card">
                                     <div className="card-header">
-                                        <p><strong>Name: </strong>{me.name}</p>
+                                        {item.name}
                                     </div>
                                     <div className="card-body">
-                                        <p><strong>Email: </strong>{me.email}</p>
+                                        {item.email}
                                     </div>
                                     <div className="card-footer">
-                                        <p><strong>Phone: </strong>{me.phone}</p>
+                                        {item.phone}
                                     </div>
                                 </div>
                             </div>
                         ))
                     }
+
                 </div>
             </div>
         </>

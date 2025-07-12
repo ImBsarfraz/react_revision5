@@ -25,6 +25,24 @@ const Nav = () => {
                                 <NavLink className="nav-link" to="/useeffecthook">Use Effect</NavLink>
                             </li>
                             <li className="nav-item">
+                                <NavLink className="nav-link" to="/userefhook">Use Ref</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/usecontexthook">Use Context</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/usereducer">Use Reducer</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className={"nav-link"} to={"/usememo"}>Use Memo</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className={"nav-link"} to={"/usecallbackhook"}>Use Callback</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className={"nav-link"} to={"/customhook"}>Custom Hook</NavLink>
+                            </li>
+                            <li className="nav-item">
                                 <NavLink className="nav-link" to="/create">Create Account</NavLink>
                             </li>
                             <li className="nav-item">
